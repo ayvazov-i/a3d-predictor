@@ -1,0 +1,23 @@
+name: a3d
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    # Deep learning
+    - torch==2.11.0+cu128
+    - fair-esm==2.0.0
+    # ML / data
+    - scikit-learn>=1.5
+    - xgboost>=2.0
+    - numpy>=1.26
+    - pandas>=2.0
+    - h5py>=3.9
+    # Serving
+    - fastapi>=0.110
+    - uvicorn[standard]>=0.27
+    - pydantic>=2.0
+    # Utilities
+    - tqdm>=4.66

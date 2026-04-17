@@ -1,0 +1,38 @@
+# ── Large / generated data ──────────────────────────────────────────────────
+data/raw/*
+data/processed/*.h5
+data/processed/*.parquet
+data/splits/
+
+# ── Experiment tracking ──────────────────────────────────────────────────────
+wandb/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environment ──────────────────────────────────────────────────────────────
+.env
+.venv/
+
+# ── Editor / OS ──────────────────────────────────────────────────────────────
+.DS_Store
+*.swp
+*.swo
+
+# ── KEEP (explicitly) ────────────────────────────────────────────────────────
+# src/**          — all source code
+# scripts/**      — all training & evaluation scripts
+# configs/**      — experiment configs
+# models_saved/best_mlp.pt   — trained MLP checkpoint (if < 100 MB)
+# models_saved/ridge_esm.pkl — Ridge baseline checkpoint (~36 KB)
+# models_saved/xgb_esm.json  — XGBoost baseline checkpoint (~3.7 MB)
+# results/*.csv              — metric summaries
+# results/*.png              — evaluation plots
+# README.md, LICENSE, environment.yml, pyproject.toml, .gitignore
