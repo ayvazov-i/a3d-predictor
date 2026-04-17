@@ -11,7 +11,7 @@ Predict per-protein Aggrescan3D (A3D) aggregation scores directly from amino-aci
 
 ```bash
 # 1. Clone
-git clone https://github.com/your-username/a3d-predictor.git
+git clone https://github.com/ayvazov-i/a3d-predictor.git
 cd a3d-predictor
 
 # 2. Create and activate the conda environment
@@ -39,7 +39,7 @@ python -m src.serving.cli --sequence "MKFLILLFNILCLFPVLAADQSTDDNKQITTVNALLKYIAQS
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/a3d-predictor.git
+git clone https://github.com/ayvazov-i/a3d-predictor.git
 cd a3d-predictor
 ```
 
@@ -199,18 +199,6 @@ python scripts/05_evaluate.py
 ---
 
 ## Citation
-
-If you use A3D-Predictor in your research, please cite:
-
-```bibtex
-@software{a3d_predictor_2026,
-  author  = {A3D-Predictor Contributors},
-  title   = {A3D-Predictor: Sequence-based Aggrescan3D Prediction},
-  year    = {2026},
-  url     = {https://github.com/your-username/a3d-predictor},
-}
-```
-
 This work relies on:
 
 - **ESM-2**: Lin et al. (2023). *Evolutionary-scale prediction of atomic-level protein structure with a language model.* Science. https://doi.org/10.1126/science.ade2574
